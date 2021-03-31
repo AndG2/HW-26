@@ -83,20 +83,41 @@ namespace HW_26
 
             //2A -should be Select, not Selectpassing
             Console.WriteLine(Select(MakeDouble,_integers));
+            foreach(int output in Select(MakeDouble, _integers))
+            {
+                Console.WriteLine(output);
+            }
+
+
             Console.ReadLine();
 
             //2B -passing Square and _integers into what?
             Console.WriteLine(Select(Square,_integers));
+            foreach (int output in Select(Square, _integers))
+            {
+                Console.WriteLine(output);
+            }
             Console.ReadLine();
+
 
             //2C
             //Func<int, int> lambDouble = (a) => a * a;
 
             Console.WriteLine(Select((a)=>2*a,_integers));
+            foreach (int output in Select((a) => 2 * a, _integers))
+            {
+                Console.WriteLine(output);
+            }
+
             Console.ReadLine();
 
             //2D
             Console.WriteLine(Select((a) => a * a, _integers));
+            foreach (int output in Select((a) => a * a, _integers))
+            {
+                Console.WriteLine(output);
+            }
+
             Console.ReadLine();
         }
 
